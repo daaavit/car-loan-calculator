@@ -31,6 +31,7 @@ export const Title = styled.h1`
     @media (max-width: 750px) {
       display: flex;
       font-size: 1.5em;
+      filter:drop-shadow(15px 3px 3px #000)
     }
 `;
 export const Calc_Area = styled.div`
@@ -65,6 +66,7 @@ export const Calculator = styled.div`
     height: auto;
     width: 90vw;
     margin-bottom: 10%;
+    filter:drop-shadow(7px 5px 2px #000)
   }
 `;
 
@@ -81,6 +83,7 @@ export const Brake_Down = styled.div`
     flex-direction: column;
     height: auto;
     width: 90vw;
+    filter:drop-shadow(7px 5px 2px #000)
   }
 `;
 
@@ -108,6 +111,12 @@ export const Input_Wrapper = styled.div`
   align-items: center;
   height: 80%;
   width: 80%;
+  @media (max-width: 750px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
 `;
 export const Button_Wrapper = styled.div`
   display: flex;
@@ -116,6 +125,10 @@ export const Button_Wrapper = styled.div`
   height: 12%;
   width: 90%;
   background: none;
+  @media (max-width: 750px) {
+    display: flex;
+    height: 10vh;
+  }
 `;
 
 export const Input = styled.input`
