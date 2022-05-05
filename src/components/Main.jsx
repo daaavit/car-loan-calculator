@@ -155,7 +155,7 @@ const Main = () => {
               <Title justifyContent="center"> ${monthlyPayment}/mo.</Title>
               <CgArrowLongLeftR color="white" size="80%" />
             </Uni_Div>
-            <Title justifyContent="center">Brakedown</Title>
+            <Title justifyContent="center">Breakdown</Title>
           </Uni_Div>
           <Uni_Div flexDirection="column" height="40%" width="90%">
             <Uni_Div
