@@ -144,7 +144,7 @@ export const Input = styled.input`
   padding: 0.5em;
   margin: 0.5em;
   color: gray;
-  background: rgb(242, 242, 242);
+  background: #dde1e7;
   border: none;
   box-shadow: inset -2px -2px 15px rgb(255, 255, 255),  inset 2px 2px 3px rgb(0, 0, 0) !important;
   border-radius: 3px;
