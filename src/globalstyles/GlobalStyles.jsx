@@ -150,6 +150,10 @@ export const Input = styled.input`
   border-radius: 3px;
   margin: 4%;
 
+  media(max-width: 750px) {
+    background: white;
+  }
+
   :hover {
     color: black;
   }
