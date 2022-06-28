@@ -145,7 +145,7 @@ export const Input = styled.input`
   color: gray;
   background: #dde1e7;
   border: none;
-  box-shadow: inset -2px -2px 5px #ffffff70,  inset 2px 2px 5px #00000070;
+  box-shadow: inset -2px -2px 5px #ffffff70,  inset 2px 2px 5px #00000070 !important;
   border-radius: 3px;
   margin: 4%;
 
