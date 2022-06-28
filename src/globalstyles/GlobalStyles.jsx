@@ -150,7 +150,7 @@ export const Input = styled.input`
   margin: 4%;
 
   @media(max-width: 750px) {
-    box-shadow: inset -2px -2px 5px #ffffff70,  inset 2px 2px 5px #00000070 !important;
+    box-shadow: inset -2px -2px 5px white,  inset 2px 2px 5px black !important;
   }
   :hover {
     color: black;
