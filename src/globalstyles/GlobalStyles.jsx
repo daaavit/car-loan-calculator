@@ -140,6 +140,7 @@ export const Button_Wrapper = styled.div`
 export const Input = styled.input`
   display: flex;
   height: 5%;
+  width: 80%;
   padding: 0.5em;
   margin: 0.5em;
   color: gray;
