@@ -99,8 +99,7 @@ const Main = () => {
           display="flex"
           fontSize="4em"
           textAlign="center"
-          color="black"
-          filter="drop-shadow(40px 10px 5px #000)"
+          color="gray"
         >
           Car Loan Calculator
         </Title>

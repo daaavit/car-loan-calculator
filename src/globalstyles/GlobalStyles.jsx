@@ -4,8 +4,12 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #f4f7fb;
+  background: #dde1e7;
   height: 100vh;
+
+  @media (max-width: 750px) {
+    height: auto;
+  }
 `;
 export const Title_Area = styled.div`
   display: flex;
@@ -31,7 +35,7 @@ export const Title = styled.h1`
     @media (max-width: 750px) {
       display: flex;
       font-size: 1.5em;
-      filter:drop-shadow(15px 3px 3px #000)
+      // filter:drop-shadow(15px 3px 3px #000)
     }
 `;
 export const Calc_Area = styled.div`
@@ -55,18 +59,19 @@ export const Calculator = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-radius: 4%;
   align-items: center;
-  height: 80%;
+  height: 90%;
   width: 30%;
-  background: #e8edc5;
-  filter: drop-shadow(29px 14px 6px #000);
+  background: #dde1e7;
+  box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 90vw;
     margin-bottom: 10%;
-    filter:drop-shadow(7px 5px 2px #000)
+    box-shadow:  -7px -7px 5px #ffffff70,  7px 7px 15px #00000070;
   }
 `;
 
@@ -74,16 +79,17 @@ export const Brake_Down = styled.div`
   display: flex;
   flex-direction: column;
   align-items: ${(props) => props.alignItems};
-  height: 80%;
+  height: 90%;
   width: 30%;
-  background: #edcdc5;
-  filter: drop-shadow(29px 14px 6px #000);
+  background: #dde1e7;
+  border-radius: 4%;
+  box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 90vw;
-    filter:drop-shadow(7px 5px 2px #000)
+    box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   }
 `;
 
@@ -136,11 +142,16 @@ export const Input = styled.input`
   height: 5%;
   padding: 0.5em;
   margin: 0.5em;
-  color: black;
-  background: white;
+  color: gray;
+  background: #dde1e7;
   border: none;
+  box-shadow: inset -2px -2px 5px #ffffff70,  inset 2px 2px 5px #00000070;
   border-radius: 3px;
   margin: 4%;
+
+  :hover {
+    color: black;
+  }
 `;
 
 export const Button = styled.button`
@@ -148,12 +159,18 @@ export const Button = styled.button`
     justify-content: center;
     align-items: center;
     align-content; center;
-    background: lightBlue;
-    border-bottom-right-radius: 20px;
+    border: none;
+    background: #dde1e7;
+    box-shadow:  -2px -2px 5px #ffffff70,  2px 2px 15px #00000090;
+    border-radius: 30px;
     height: 50%;
     width: 40%;
     color: black;
     font-size: 1.2em;
     font-weight: bold;
+
+    :active {
+      box-shadow: inset -2px -2px 5px #ffffff70,  inset 2px 2px 5px #00000070;
+    }
 
 `;
