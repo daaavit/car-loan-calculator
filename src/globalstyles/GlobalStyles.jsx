@@ -68,7 +68,7 @@ export const Calculator = styled.div`
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 90vh;
     width: 90vw;
     margin-bottom: 10%;
     box-shadow:  -7px -7px 5px #ffffff70,  7px 7px 15px #00000070;
@@ -87,7 +87,7 @@ export const Brake_Down = styled.div`
   @media (max-width: 750px) {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 90vh;
     width: 90vw;
     box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   }
