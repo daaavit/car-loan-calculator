@@ -12,6 +12,10 @@ import {
   Button,
   Uni_Div,
 } from "../globalstyles/GlobalStyles";
+import {
+  Link,
+  animateScroll as scroll,
+} from "react-scroll";
 
 const Main = () => {
   const [price, setPrice] = useState(0);
@@ -91,6 +95,10 @@ const Main = () => {
   const suggestionText = () => {
     setSuggestion(<h4>Save money! Go get a beater car:)</h4>);
   };
+
+  const linkToBrakeDown = () => {
+    <Link to="brakeDown" smooth={true} duration={1000}></Link >
+  }
   const totalPrice = priceSetter - downPaymentSetter;
   return (
     <>
@@ -126,7 +134,7 @@ const Main = () => {
             <Input type="number" value={otherFees} onChange={otherFeesSetter} />
           </Input_Wrapper>
           <Button_Wrapper>
-            <Button to="brakeDown" onClick={calculator}>
+            <Button onClick={() => { calculator(); /*linkToBrakeDown();*/}}>
               Calculate
             </Button>
             <Button onClick={rest}>Rest</Button>
