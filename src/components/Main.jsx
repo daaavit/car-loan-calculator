@@ -96,9 +96,7 @@ const Main = () => {
     setSuggestion(<h4>Save money! Go get a beater car:)</h4>);
   };
 
-  const linkToBrakeDown = () => {
-    <Link to="brakeDown" smooth={true} duration={1000}></Link >
-  }
+
   const totalPrice = priceSetter - downPaymentSetter;
   return (
     <>
@@ -134,8 +132,8 @@ const Main = () => {
             <Input type="number" value={otherFees} onChange={otherFeesSetter} />
           </Input_Wrapper>
           <Button_Wrapper>
-            <Button onClick={() => { calculator(); /*linkToBrakeDown();*/}}>
-              Calculate
+            <Button /*onClick={calculator}*/>
+              <Link onClick={calculator} to="brakeDown" smooth={true} duration={1000}>Calculate </Link >
             </Button>
             <Button onClick={rest}>Rest</Button>
           </Button_Wrapper>
