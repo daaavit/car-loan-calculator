@@ -65,7 +65,7 @@ const Main = () => {
   let toBeTotalPaid =
     parseInt(price) +
     parseInt(downPayment) +
-    parseInt(tradeIn) +
+    // parseInt(tradeIn) +
     toBeTaxed +
     toBeInterestRate;
   let toBeCostOfFinance = parseInt(otherFees) + toBeInterestRate;
@@ -95,12 +95,7 @@ const Main = () => {
   return (
     <>
       <Title_Area>
-        <Title
-          display="flex"
-          fontSize="4em"
-          textAlign="center"
-          color="gray"
-        >
+        <Title display="flex" fontSize="4em" textAlign="center" color="gray">
           Car Loan Calculator
         </Title>
       </Title_Area>
@@ -131,11 +126,13 @@ const Main = () => {
             <Input type="number" value={otherFees} onChange={otherFeesSetter} />
           </Input_Wrapper>
           <Button_Wrapper>
-            <Button onClick={calculator}>Calculate</Button>
+            <Button to="brakeDown" onClick={calculator}>
+              Calculate
+            </Button>
             <Button onClick={rest}>Rest</Button>
           </Button_Wrapper>
         </Calculator>
-        <Brake_Down alignItems="center">
+        <Brake_Down id="brakeDown" alignItems="center">
           <Uni_Div height="10%" justifyContent="center" alignItems="center">
             <Title
               flexDireciton="column"
@@ -197,7 +194,9 @@ const Main = () => {
               alignItems="center"
             >
               <h4>Click below to get recommendations</h4>
-              <Button onClick={suggestionText}>SHOW ME</Button>
+              <Button style={{ margin: "3%" }} onClick={suggestionText}>
+                SHOW ME
+              </Button>
               {suggestion}
             </Uni_Div>
           </Uni_Div>
