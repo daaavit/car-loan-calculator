@@ -88,7 +88,8 @@ export const Brake_Down = styled.div`
     display: flex;
     flex-direction: column;
     height: 90vh;
-    width: 90vw;
+    width: 90vw;  
+    margin-bottom: 5vh;
     box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   }
 `;
