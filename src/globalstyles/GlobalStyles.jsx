@@ -163,7 +163,8 @@ export const Button = styled.button`
     align-content; center;
     border: none;
     background: #dde1e7;
-    box-shadow:  -2px -2px 5px #ffffff70,  2px 2px 15px #00000090;
+    box-shadow:  -2px -2px 5px #ffffff98,  2px 2px 4px #00000090;
+    border: 1px solid lightgray;
     border-radius: 30px;
     height: 50%;
     width: 40%;
