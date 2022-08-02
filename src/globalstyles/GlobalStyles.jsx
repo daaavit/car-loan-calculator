@@ -63,6 +63,8 @@ export const Calculator = styled.div`
   align-items: center;
   height: 90%;
   width: 30%;
+  max-width: 400px;
+  max-height: 700px;
   background: #dde1e7;
   box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
   @media (max-width: 750px) {
@@ -81,6 +83,8 @@ export const Brake_Down = styled.div`
   align-items: ${(props) => props.alignItems};
   height: 90%;
   width: 30%;
+  max-width: 400px;
+  max-height: 700px;
   background: #dde1e7;
   border-radius: 4%;
   box-shadow:  -7px -7px 20px #ffffff70,  7px 7px 20px #00000070;
